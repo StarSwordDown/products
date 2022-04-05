@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="ch" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>网页布局</title>
+</head>
+<body>
+    <header>
+        <h1>网页布局很重要</h1>
+        <h2>网页怎么布局</h2>
+    </header>
+    <div>
+        <p>我们需要用<abbr title="Hypertext Markup Language">HTML</abbr>来构造网页基本结构，然后要用<abbr title="Cascading Style Sheet">CSS</abbr>来进行布局<br/><button id="btn1">点击这里，了解什么是HTML</button></p>
+        <p>CSS的学习很简单<br/><button id="btn2">点击这里，了解什么是CSS</button></p>
+    </div>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var h1 = document.getElementsByTagName("h1")[0];
+        var h2 = document.getElementsByTagName("h2")[0];
+        var p = document.getElementsByTagName("p");
+        btn1.onclick = function () {
+            window.open("https://baike.baidu.com/item/HTML/97049?fr=aladdin", "_blank");
+         }
+        btn2.onclick = function () {
+            window.open("https://baike.baidu.com/item/CSS/5457", "_blank");
+        }
+        btn1.style.border = "groove 3px blue";
+        btn2.style.border = "groove 3px blue";
+        btn1.style.cursor = "pointer";
+        btn2.style.cursor = "pointer";
+        btn1.style.backgroundColor = "yellow";
+        btn2.style.backgroundColor = "yellow";
+        btn1.style.color = "#e28b32";
+        btn2.style.color = "#e28b32";
+        h1.style.color = "#f79782";
+        h2.style.color = "#82f7b0";
+        h1.style.textAlign = "center";
+        h1.style.font = "黑体";
+        for (var i = 0; i < 2; i++) {
+            p[i].style.font = "仿宋";
+            p[i].style.color = "#368753";
+        }
+    </script>
+</body>
+</html>
